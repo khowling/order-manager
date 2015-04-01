@@ -60,7 +60,7 @@ input.ng-invalid.ng-dirty, input.ng-invalid, textarea.ng-invalid.ng-dirty, texta
 }
 
 
-/* FIX for the Foundation5 off-canvas scroll issue 
+/* FIX for the Foundation5 off-canvas scroll issue
 .off-canvas-fixed {
     -webkit-transition: -webkit-transform 500ms ease;
     transition: transform 500ms ease;
@@ -157,14 +157,16 @@ p {
 }
 
 nav.tab-bar {
-    background: #e60000 !important;
+    //background: #e60000 !important;
+		background: #333 !important;
 }
 div.switch1 input:checked + label {
     background: #fff !important;
     border-radius: 3px !important;
 }
 div.switch1 input:checked + label:after {
-    background: #e60000 !important;
+    //background: #e60000 !important;
+		background: #333 !important;
 }
 .fi-list:before {
     color:#fff;
@@ -174,7 +176,8 @@ div.switch1 input:checked + label:after {
 }
 
 .mun {
-    color:#e60000 !important;
+    //color:#e60000 !important;
+		color:#333 !important;
 }
 .headBtn {
     background: #fff;
@@ -204,7 +207,8 @@ div.switch1 input:checked + label:after {
     position: relative;
 }
 .ham:before {
-    color:#e60000 !important;
+    //color:#e60000 !important;
+		color:#333 !important;
 }
 
 .lrgLogoWrap {
@@ -251,11 +255,11 @@ button, .button {
     color: #e60000;
     text-align: left;
     border-bottom: 1px solid #cacaca;
-    font-weight: bold;        
+    font-weight: bold;
 }
 
 .pricing-table .price {
-    text-align: left; 
+    text-align: left;
 }
 
 .postfix.button {
@@ -373,7 +377,7 @@ ul.pricing-table li:first-child {
 ul.pricing-table li:last-child {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}    
+}
 
 li.check {
     background: url(../img/sse-images/check.png) no-repeat 7% 50%;
@@ -383,7 +387,7 @@ li.check {
 }
 li.prev {
    padding: 0.9375rem;
-    background: #fff; 
+    background: #fff;
 }
 .offerBtn {
     width: 100% !important;
@@ -435,7 +439,7 @@ li.prev {
     border-radius: 5px !important;
 }
 .basketContWrap {
-   padding-left: 15px; 
+   padding-left: 15px;
 }
 .side-nav li a:not(.button) {
     padding: 0.4375rem 0.0rem;
@@ -479,12 +483,11 @@ h5.homeHead {
     .logoWrap {
         display: none;
     }
-}  
+}
 @media screen and (min-width:600px) {
 
     .ham {
         //display: none;
     }
 
-}    
-
+}

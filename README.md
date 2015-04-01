@@ -14,6 +14,9 @@ cordova plugin add org.apache.cordova.file
 cordova plugin add org.apache.cordova.file-transfer
 cordova platform add ios
 
+generate icons : makeappicon.com
+generate splash : http://ticons.fokkezb.nl
+
 cp in www
 cordova prepare
 cordova build
@@ -25,7 +28,7 @@ to run on attached device::
 
 npm install -g ios-deploy (need version 1.4.0)
 cordova build ios --device
-cordova run ios --device 
+cordova run ios --device
 
 
 to deploy:

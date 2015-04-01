@@ -42,8 +42,8 @@
 				console.log ('we are not in a vf page, set debug params');
 				_sfdccreds.session_api = debug_session;
 			} else {
-				static_resource_url = '/resource/1406413267000/digitalcpq_resources/digitalcpq_resources';
-				_sfdccreds.sf_host_url = 'https://c.eu2.visual.force.com';
+				static_resource_url = "{!URLFOR($Resource.digitalcpq_resources, 'digitalcpq_resources')}";
+				_sfdccreds.sf_host_url = '';
 				inVisualforce = true;
 			}
 		</script>
@@ -145,11 +145,12 @@
 				<nav class="tab-bar" style="background: white; " data-topbar="1"> <!--  border-bottom: 1px solid #dbdbdb; -->
 
                 <section class="left-small" style="border-right: 0px;">
+                  <!--
                     <a class="show-for-small" ng-href="#/">
                     	<img ng-src="{{static_resource_url}}/img/sse-images/vodafone.jpg" style="margin-left: 5px;"/>
                    	</a>
-
-                    <div class="hide-for-small" style="height:100%; width:100%; background: white;" >
+                   -->
+                    <div style="height:100%; width:100%; background: white;" > <!-- class="hide-for-small" -->
 											   <a class="" ng-href="#/">
 											   	<i class="fi-list ham" style="font-size: 25px; margin: 10px;"></i>
 											   </a>
@@ -161,8 +162,8 @@
 										<div style="white-space: nowrap; height: 45px;">
 
 											<div style="display: inline-block!important; vertical-align: top;" >
-											   <a href="#/" class="hide-for-small" style="margin-right: 20px;">
-											    	<img class="logoHead" ng-src="{{static_resource_url}}/img/sse-images/vod-logo.png"/>
+											   <a href="#/" class="hide-for-small"> <!-- style="margin-right: 20px;" -->
+											    	<img class="logoHead" style="background: white; height: 80%; margin-top: 5px;" ng-src="{{static_resource_url}}/img/talktalklogo.png"/>
 											   </a>
 											</div>
 
