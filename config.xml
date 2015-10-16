@@ -10,7 +10,12 @@
     <content src="index.html" />
     <access origin="*" />
     <preference name="DisallowOverscroll" value="true"/>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="deployment-target" value="8.0" />
     <feature name="Console"> <param name="ios-package" value="CDVLogger" /> </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
     <platform name="ios">
               <!-- iOS 7.0+ -->
               <!-- iPhone / iPod Touch  -->

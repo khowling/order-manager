@@ -238,6 +238,8 @@ angular.module('sfdata.service', ['sfdata.constants'])
           //  _smartstore = cordova.require("salesforce/plugin/smartstore");
           //  _bootstrap = cordova.require("salesforce/util/bootstrap");
 
+          if (StatusBar) StatusBar.overlaysWebView(false);
+
           _sfdcoauth = cordova.require("com.salesforce.plugin.oauth");
           _smartstore = cordova.require("com.salesforce.plugin.smartstore");
           _bootstrap = cordova.require("com.salesforce.util.bootstrap");
